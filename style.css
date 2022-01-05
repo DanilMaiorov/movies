@@ -1,0 +1,19 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px;
+    outline: 1px solid black;
+}
+
+.movie-card {
+    max-width: 170px;
+    max-height: 250px;
+    outline: 1px solid black;
+}
+img {
+    width: 150px;
+}
