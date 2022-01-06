@@ -6,14 +6,76 @@
 
 body {
     margin: 20px;
-    outline: 1px solid black;
-}
+    background-image: url(https://icdn.lenta.ru/images/2019/08/09/14/20190809143513903/square_1280_1ab2a2af273ce72619e3b35aa536abdd.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 
+}
+.container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
 .movie-card {
-    max-width: 170px;
-    max-height: 250px;
-    outline: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+
 }
 img {
-    width: 150px;
+    width: 220px;
+    border-radius: 15px;
+}
+img:hover {
+    width: 248px;
+    transition: 0.6s;
+}
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 26px;
+    text-align: center;
+
+}
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(206, 161, 144);
+}
+.poster {
+    height: 305px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.movie-name {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+#select-movie {
+    width: 200px;
+    height: 40px;
+    margin-left: 50px;
+    border: none;
+    border-radius: 10px;
+    background: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 16px;
+    color: blanchedalmond;
+    border: aliceblue 1px solid;
+}
+#select-movie:hover {
+    background: rgb(56, 30, 20);
+    transition: 0.6s;
+    color: blanchedalmond;
+    cursor: pointer;
 }
