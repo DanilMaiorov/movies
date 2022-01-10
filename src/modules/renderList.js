@@ -18,29 +18,26 @@ const renderList = (movies) => { //функция для отрисовки сп
         })
     selector.addEventListener('change', (e) => { //вешаю обработчик события на изменение при выборе селекта
         const cards = document.querySelectorAll('.card') //перебираю массив карточек ИЗ ВНОВЬ СОЗДАННЫХ В НОВЫМ КЛАССОМ
-        const movies = document.querySelectorAll('.name') //перебираю массив с фильмами 
-        console.log(e.target.value)
-        movies.forEach(item => {
+        const movies = document.querySelectorAll('.name') //перебираю массив с фильмами
+/*         movies.forEach(item => {
             const {movies} = item
             if(item.movies != null) {  //делаю проверку на исключение пустых массивов
                 movieArr.push(item.movies) //пушу все в новый массив
             }
-        })
-            let arrUn = arrayUnique(movieArr.join().split(',')).forEach(item => {
+        }) */
+           /* let arrUn = arrayUnique(movieArr.join().split(',')).forEach(item => {
                 newMovieArr.push(item)
             })
             let newArrr = newMovieArr.splice(0, 24)
-            console.log(typeof newArrr[0])
+            
+            console.log(typeof newArrr[0]) */
             cards.forEach((element, index) => { //перебираю массив по элементу и индексу
                 element.style.display = 'none'
-            if (newArrr[index] == e.target.value) { //условие на сокрытие карточек, не сподходящих под название фильма
-                //debugger
+            if (movies[index].textContent.includes(e.target.value)) { //условие на сокрытие карточек, не сподходящих под название фильма
+                debugger
                 element.style.display = 'block';
             } 
         })  
-
-        
     })    
-     
 };
 export default renderList

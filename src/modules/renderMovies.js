@@ -36,6 +36,8 @@
         } */
         //cartArr.push(movieItem)
         movieCart.append(card) 
+        //const movires = document.querySelectorAll('.name') 
+        //console.log(movires)
     });
 
      
